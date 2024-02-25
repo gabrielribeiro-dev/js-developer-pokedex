@@ -1,0 +1,173 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #46d1b2;
+}
+
+.interactive-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.interactive-icons {
+    display: flex;
+    width: 25px;   
+}
+
+.name{
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: .25rem;
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+
+.content{
+    margin: 2.4rem 2rem;
+    color: white;
+}
+
+.type{
+    list-style: none;
+    color: #fff;
+    padding: .55rem .7rem;
+    font-size: .865rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    background-color: #46d1b2;
+    text-align: center;
+    width: 4rem;
+    margin-right: 5px;
+}
+
+.detail{
+    display: flex;
+    justify-content: left;
+}
+
+.number{
+    display: flex;
+    justify-content: right;
+}
+
+ol{
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+}
+
+.pokemon{
+    position: relative;
+    top: 100px;
+}
+
+.info-details{
+    background-color: white;
+    height: 450px;
+    border-radius: 35px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu button {
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #444e565f;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu button:focus {
+    outline: none;
+}
+
+button.selected {
+    border-bottom: 2px solid #6c7adc;
+    color: #444e56;
+}
+
+.category{
+    font-size: 12px;
+}
+
+.pokemonDetails img {
+    position: relative;
+    top: 80px;
+    width: 260px;
+    display: block;
+    margin: auto;
+}
+
+th{
+    color: rgba(0, 0, 0, 0.35);
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+table p{
+    color: rgba(0, 0, 0, 0.35);
+}
+
+table .num{
+    color: rgba(0, 0, 0);
+    text-align: left;
+}
+
+td{
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+h3{
+    margin-top: 2rem;
+}
+
+table{
+    border-collapse: separate;
+    padding: 20px;
+    font-size: 0.95rem;
+}
+
+.favorite-icon {
+    cursor: pointer;
+  }
+
+  .progress-bar {
+    height: 4px;
+    border-top: 1px solid #ccc;
+    background-color: green;
+    border-radius: 1rem;
+}
+
+.limit-bar{
+    background-color: #cccccc4f;
+    border-radius: 1rem;
+}
+
+.button.selected {
+    border-bottom: 2px solid blue;
+}
+
+.image-back{
+    display: flex;
+    position: absolute;
+    left: 150px;
+    top: 60px;
+
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        zoom: 120%;
+        padding: 80px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Pokémon</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="/assets/css/details.css">
+    <link rel="stylesheet" href="/assets/css/pokedex.css">
+</head>
+
+<body>
+   
+    <script>
+        function trocarImagem() {
+          var imagem = document.getElementById('image');
+          if (imagem.src.endsWith('assets/images/favorite-icon.png')) {
+            imagem.src = 'assets/images/favorited.png';
+            imagem.alt = 'Favorited';
+          } else {
+            imagem.src = 'assets/images/favorite-icon.png';
+            imagem.alt = 'Favorite';
+          }
+        }
+      </script>
+
+    <section class="content">
+        <p>em desenvolvimento...</p>
+        <div class="interactive-line">
+            <a href="index.html" >
+                <img class="interactive-icons" src="assets/images/back-arrow.png" alt="Back"> </a>
+                <div id="pokemonBack">
+                </div>
+                <img onclick="trocarImagem()" id="image" class="interactive-icons favorite-icon" src="assets/images/favorite-icon.png" alt="Favorite">
+        </div>    
+        
+        <div id="pokemonInfo">
+            <!-- ...... -->
+        </div>
+        <div id="pokemonAbout">
+            <!-- ...... -->
+        </div>
+
+    </section>
+
+        <div class="info-details">
+            <div class="menu">
+                <button id="about-btn">About</button>
+                <button id="status-btn">Base Status</button>
+            </div>
+
+            <div id="content">
+
+            </div>
+        </div>
+
+        <script src="/assets/js/button.js"></script>
+        <script src="/assets/js/pokemon-details.js"></script>
+        <script src="/assets/js/main.js"></script>
+</body>
+</html>

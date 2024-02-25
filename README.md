@@ -1,1 +1,3 @@
-# Trilha JS Developer - Pokedex
+# Trilha JS Developer - Pokedex (Gabriel Ribeiro)
+
+em desenvolvimento...
